@@ -35,6 +35,9 @@ gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.2'
 #Devise 
 gem 'devise', '~> 3.5', '>= 3.5.2'
 
+#Formtastic 
+gem 'formtastic', '~> 3.1', '>= 3.1.3'
+
 #Postgre
 gem 'pg', group: :production
 #
