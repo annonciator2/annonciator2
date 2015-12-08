@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
 
+  resources :kebabs
   devise_for :users
   get 'pages/home' => 'pages#home'
   

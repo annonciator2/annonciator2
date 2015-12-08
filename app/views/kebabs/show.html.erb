@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @kebab.name %>
+</p>
+
+<p>
+  <strong>Addresse:</strong>
+  <%= @kebab.addresse %>
+</p>
+
+<p>
+  <strong>Note moyenne:</strong>
+  <%= @kebab.note_moyenne %>
+</p>
+
+<p>
+  <strong>Latlong:</strong>
+  <%= @kebab.latlong %>
+</p>
+
+<p>
+  <strong>Tel:</strong>
+  <%= @kebab.tel %>
+</p>
+
+<%= link_to 'Edit', edit_kebab_path(@kebab) %> |
+<%= link_to 'Back', kebabs_path %>

@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Kebabs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Addresse</th>
+      <th>Note moyenne</th>
+      <th>Latlong</th>
+      <th>Tel</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kebabs.each do |kebab| %>
+      <tr>
+        <td><%= kebab.name %></td>
+        <td><%= kebab.addresse %></td>
+        <td><%= kebab.note_moyenne %></td>
+        <td><%= kebab.latlong %></td>
+        <td><%= kebab.tel %></td>
+        <td><%= link_to 'Show', kebab %></td>
+        <td><%= link_to 'Edit', edit_kebab_path(kebab) %></td>
+        <td><%= link_to 'Destroy', kebab, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kebab', new_kebab_path %>

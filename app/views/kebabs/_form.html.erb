@@ -1,0 +1,37 @@
+<%= form_for(@kebab) do |f| %>
+  <% if @kebab.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@kebab.errors.count, "error") %> prohibited this kebab from being saved:</h2>
+
+      <ul>
+      <% @kebab.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :addresse %><br>
+    <%= f.text_field :addresse %>
+  </div>
+  <div class="field">
+    <%= f.label :note_moyenne %><br>
+    <%= f.number_field :note_moyenne %>
+  </div>
+  <div class="field">
+    <%= f.label :latlong %><br>
+    <%= f.text_field :latlong %>
+  </div>
+  <div class="field">
+    <%= f.label :tel %><br>
+    <%= f.text_field :tel %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
