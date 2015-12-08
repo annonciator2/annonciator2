@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+ 
+
+  devise_for :users
+  get 'pages/home' => 'pages#home'
+  
+  get 'pages/contact' => 'pages#contact'
+
+  get "pages/about" => 'pages#about'
+
+  get "pages/inscription" => 'pages#inscription'
+
+  get "pages/annonces"  => 'pages#annonces'
+  
+  resources :pages
+  
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

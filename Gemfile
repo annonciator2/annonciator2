@@ -6,7 +6,7 @@ gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+#gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -23,9 +23,22 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+#Bootstrap
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+
+#Autoprefixer
+gem 'autoprefixer-rails', '~> 6.1', '>= 6.1.2'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#Devise 
+gem 'devise', '~> 3.5', '>= 3.5.2'
+
+#Postgre
+group :production do
+	gem 'pg'
+end
 # Use Unicorn as the app server
 # gem 'unicorn'
 
