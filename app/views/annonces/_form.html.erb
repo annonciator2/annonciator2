@@ -1,0 +1,15 @@
+<%= semantic_form_for @annonce do |f| %>
+  <%= f.inputs :name => "1 : Titre de l'annonce 2 : Categorie (Ex: Voitures, Electroménager, etc), 3 : Prix, 4 : Contenu" do %>
+    <%= f.input :titre %> 
+    <%= f.input :categorie %>
+    <%= f.input :prix %>
+    <%= f.input :contenu %>
+  <% end %>
+
+<h6> Note importante : Notre version actuelle du site ne permet pas encore d'ajouter de photos. </br> Merci de renseigner vos coordonnées (Mail uniquement) dans l'annonce afin de pouvoir les échanger avec le vendeur si l'annonce vous interesse </br>
+L'équipe annonciator </h6>
+  <%= f.actions do %>
+    <%= f.action :submit, :as => :input %>
+  <% end %>
+<% end %>
+

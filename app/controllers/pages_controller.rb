@@ -19,7 +19,7 @@ end
   
   def inscription
       @titre = "Inscription"
-      redirect_to :root
+      redirect_to :annonces
 end
   
 

@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h3>Toutes nos annonces</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Titre &nbsp</th>
+      <th>Categorie &nbsp</th>
+      <th>Prix &nbsp</th>
+      <th>Contenu &nbsp</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @annonces.each do |annonce| %>
+      <tr>
+        <td><%= annonce.titre %> </br></td>
+        <td><%= annonce.categorie %> </br></td>
+        <td><%= annonce.prix %></br></td>
+        <td><%= annonce.contenu %></br></td>
+        <td><%= link_to 'Voir', annonce %></br></td>
+        <td><%= link_to 'Modifier', edit_annonce_path(annonce) %></br></td>
+        <td><%= link_to 'Supprimer', annonce, method: :delete, data: { confirm: 'Êtes-vous sur ?' } %></br></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nouvelle annonce', new_annonce_path %>
