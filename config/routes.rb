@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   get "pages/inscription" => 'pages#inscription'
 
-  get "pages/annonces"  => 'pages#annonces'
+  get "/annonces"  => 'annonces#index'
   
   resources :pages
   
