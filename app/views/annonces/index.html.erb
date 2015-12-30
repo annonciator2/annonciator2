@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-
 <p><%= image_tag("logo5.png", :alt => "Application exemple", :class => "round") %></p>
 <table>
   <thead>
@@ -24,8 +23,8 @@
         <td></br><%= annonce.email  %>&nbsp</br></td>
         <td></br><%= annonce.ville %>&nbsp</br></td>
         <td></br><%= link_to 'Voir  ', annonce %></br></td>
-        <<td></br><%= link_to 'Modifier  ', edit_annonce_path(annonce) %></br></td>
-        <td></br><%= link_to 'Supprimer  ', annonce, method: :delete, data: { confirm: 'Êtes vous sur ?' } %></br></td> 
+        <!-- <td></br><%= link_to 'Modifier  ', edit_annonce_path(annonce) %></br></td>
+        <td></br><%= link_to 'Supprimer  ', annonce, method: :delete, data: { confirm: 'Êtes vous sur ?' } %></br></td> -->
       </tr>
     <% end %>
   </tbody>
@@ -37,7 +36,7 @@
 </br>
 </br>
 
-<h7 align="justify">Pour tout retrait d'annonce, merci de contacter nos équipes annonciator à l'adresse suivante : jhoussou@et.esiea.fr</br>
+<h7 align="center">Pour tout retrait d'annonce, merci de contacter nos équipes annonciator à l'adresse suivante : jhoussou@et.esiea.fr ou liebert@et.esiea.fr</br>
   Une annonce est supprimée par les équipes de modérations au bout de 14 jours</h7>
 
 </br>
