@@ -1,5 +1,7 @@
 class AnnoncesController < ApplicationController
   before_action :set_annonce, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, only: :inscription
+  
 
   # GET /annonces
   # GET /annonces.json
@@ -28,7 +30,7 @@ class AnnoncesController < ApplicationController
 
     respond_to do |format|
       if @annonce.save
-        format.html { redirect_to @annonce, notice: 'Annonce was successfully created.' }
+        format.html { redirect_to @annonce, notice: 'Annonce crée avec succès' }
         format.json { render :show, status: :created, location: @annonce }
       else
         format.html { render :new }
@@ -42,7 +44,7 @@ class AnnoncesController < ApplicationController
   def update
     respond_to do |format|
       if @annonce.update(annonce_params)
-        format.html { redirect_to @annonce, notice: 'Annonce was successfully updated.' }
+        format.html { redirect_to @annonce, notice: 'Annonce mise à jour avec succès' }
         format.json { render :show, status: :ok, location: @annonce }
       else
         format.html { render :edit }
@@ -56,7 +58,7 @@ class AnnoncesController < ApplicationController
   def destroy
     @annonce.destroy
     respond_to do |format|
-      format.html { redirect_to annonces_url, notice: 'Annonce was successfully destroyed.' }
+      format.html { redirect_to annonces_url, notice: 'Annonce supprimée avec succès' }
       format.json { head :no_content }
     end
   end
@@ -69,6 +71,6 @@ class AnnoncesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def annonce_params
-      params.require(:annonce).permit(:titre, :categorie, :prix, :contenu)
+      params.require(:annonce).permit(:titre, :categorie, :prix, :contenu, :email, :ville)
     end
 end

@@ -5,9 +5,13 @@ one:
   categorie: MyString
   prix: MyString
   contenu: MyString
+  email: MyString
+  ville: MyString
 
 two:
   titre: MyString
   categorie: MyString
   prix: MyString
   contenu: MyString
+  email: MyString
+  ville: MyString

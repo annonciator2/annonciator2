@@ -18,7 +18,7 @@ class AnnoncesControllerTest < ActionController::TestCase
 
   test "should create annonce" do
     assert_difference('Annonce.count') do
-      post :create, annonce: { categorie: @annonce.categorie, contenu: @annonce.contenu, prix: @annonce.prix, titre: @annonce.titre }
+      post :create, annonce: { categorie: @annonce.categorie, contenu: @annonce.contenu, email: @annonce.email, prix: @annonce.prix, titre: @annonce.titre, ville: @annonce.ville }
     end
 
     assert_redirected_to annonce_path(assigns(:annonce))
@@ -35,7 +35,7 @@ class AnnoncesControllerTest < ActionController::TestCase
   end
 
   test "should update annonce" do
-    patch :update, id: @annonce, annonce: { categorie: @annonce.categorie, contenu: @annonce.contenu, prix: @annonce.prix, titre: @annonce.titre }
+    patch :update, id: @annonce, annonce: { categorie: @annonce.categorie, contenu: @annonce.contenu, email: @annonce.email, prix: @annonce.prix, titre: @annonce.titre, ville: @annonce.ville }
     assert_redirected_to annonce_path(assigns(:annonce))
   end
 

@@ -20,5 +20,15 @@
   <%= @annonce.contenu %>
 </p>
 
+<p>
+  <strong>Email:</strong>
+  <%= @annonce.email %>
+</p>
+
+<p>
+  <strong>Ville:</strong>
+  <%= @annonce.ville %>
+</p>
+
 <%= link_to 'Edit', edit_annonce_path(@annonce) %> |
 <%= link_to 'Back', annonces_path %>

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
  
 
   resources :annonces
+  resources :annonces
+  resources :annonces
   resources :kebabs
   devise_for :users
 
