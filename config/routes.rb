@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :annonces
   resources :kebabs
   devise_for :users
+
   get 'pages/home' => 'pages#home'
   
   get 'pages/contact' => 'pages#contact'
@@ -12,7 +13,7 @@ Rails.application.routes.draw do
 
   get "pages/inscription" => 'pages#inscription'
 
-  get "/annonces"  => 'annonces#index'
+  get "/annonces" => 'annonces#index'
   
   resources :pages
   
