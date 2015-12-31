@@ -1,5 +1,8 @@
-<p id="notice"><%= notice %></p>
-<p><%= image_tag("logo5.png", :alt => "Application exemple", :class => "round") %></p>
+ <div class="jumbotron">
+        <p align="center"><%= image_tag("logo5.png", :alt => "Application exemple", :class => "round") %></p>
+        <p class="lead"></p>
+         </div>
+        </br>
 <table>
   <thead>
     <tr>
@@ -9,7 +12,7 @@
       <th>Contenu &nbsp</br></th>
       <th>Email &nbsp</br></th>
       <th>Ville &nbsp</br></th>
-      <th colspan="10"></th>
+      <th colspan="50"></th>
     </tr>
   </thead>
 
@@ -23,7 +26,7 @@
         <td></br><%= annonce.email  %>&nbsp</br></td>
         <td></br><%= annonce.ville %>&nbsp</br></td>
         <td></br><%= link_to 'Voir  ', annonce %></br></td>
-        <!-- <td></br><%= link_to 'Modifier  ', edit_annonce_path(annonce) %></br></td>
+       <!--<td></br><%= link_to 'Modifier  ', edit_annonce_path(annonce) %></br></td>
         <td></br><%= link_to 'Supprimer  ', annonce, method: :delete, data: { confirm: 'Êtes vous sur ?' } %></br></td> -->
       </tr>
     <% end %>
@@ -36,8 +39,8 @@
 </br>
 </br>
 
-<h7 align="center">Pour tout retrait d'annonce, merci de contacter nos équipes annonciator à l'adresse suivante : jhoussou@et.esiea.fr ou liebert@et.esiea.fr</br>
-  Une annonce est supprimée par les équipes de modérations au bout de 14 jours</h7>
+<h7 align="center">Pour tout retrait d'annonce (en cas de vente ou changement d'avis, merci de contacter nos équipes annonciator à l'adresse suivante : jhoussou@et.esiea.fr ou liebert@et.esiea.fr</br>
+  Chaque annonce est supprimée par les équipes de modération au bout de 30 jours</h7>
 
 </br>
 </br>
