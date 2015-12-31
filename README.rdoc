@@ -1,28 +1,19 @@
-== README
+== README Annonciator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bonjour M. Fabrigli : Un bug de synchronisation avec la base de donnée PostGre d'Heroku empêche le fonctionnement de la fonctionnalité Annonces. Nous n'avons pas encore trouvé le problème y compris en vérifiant les logs Heroku Il ne sera pas possible de tester la zone "Annonces" en live sur le lien Heroku mais elle est fonctionnelle en locale. Il faudra pour cela importer le projet github sur votre machine et démarrer l'appli en localhost:3000 pour tester la vue des annonces. 
 
-Things you may want to cover:
+Concept : Annonciator est un site d'annonces en ligne rapide. Les annonces tiennent en une ligne et il n'y a pas d'ajout de photos possible. Les utilisateurs doivent s'échanger les modalités d'achat par mail perso.
 
-* Ruby version
+Lien Heroku de l'application : https://annonciator2.herokuapp.com
 
-* System dependencies
+Fonctionnalités : Possibilité de s'inscrire (Implémentation de devise)
+Possibilité de créee des annonces
+Possibilité de les modifier "Désactivé par défaut"
+Possibilité de les supprimer "Désactivé par défaut"
 
-* Configuration
+Une page d'acceuil propre
+Une page contact avec les coordonnées des créateurs 
 
-* Database creation
+Un modèle KEBAB à été crée pour servir de mini base de donnée pour notre application mobile android : Keb'abvisor 
+Il est indépendant du reste du site. 
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
